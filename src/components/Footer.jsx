@@ -1,13 +1,13 @@
 function Footer() {
   return (
-    <footer className="footer">
-      <h3>📚 AI Study Hub</h3>
+    <footer className="border-t border-slate-800 mt-20">
 
-      <p>
-        Helping students of Class 9, 10, 11 & 12 learn smarter with AI.
-      </p>
+      <div className="max-w-7xl mx-auto px-6 py-8 text-center text-slate-400">
 
-      <p>© 2026 AI Study Hub. All Rights Reserved.</p>
+        © 2026 AI Study Hub • Built with React + Tailwind CSS
+
+      </div>
+
     </footer>
   );
 }
