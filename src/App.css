@@ -1,0 +1,227 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+  transition:0.3s;
+}
+
+/* ========================= */
+/* Navbar */
+/* ========================= */
+
+.navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 8%;
+  background:#111827;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.nav-links a{
+  color:#fff;
+  font-weight:500;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+.login-btn{
+  background:#38bdf8;
+  color:white;
+  padding:10px 20px;
+  border-radius:8px;
+  font-size:15px;
+}
+
+.login-btn:hover{
+  transform:scale(1.05);
+}
+
+/* ========================= */
+/* Hero */
+/* ========================= */
+
+.hero{
+  min-height:85vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:20px;
+  color:#cbd5e1;
+  line-height:1.8;
+  margin-bottom:35px;
+}
+
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.primary-btn{
+  background:#38bdf8;
+  color:white;
+  padding:14px 30px;
+  border-radius:10px;
+  font-size:17px;
+}
+
+.primary-btn:hover{
+  transform:translateY(-3px);
+}
+
+.secondary-btn{
+  background:transparent;
+  border:2px solid #38bdf8;
+  color:#38bdf8;
+  padding:14px 30px;
+  border-radius:10px;
+  font-size:17px;
+}
+
+.secondary-btn:hover{
+  background:#38bdf8;
+  color:white;
+}
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+
+.classes-section{
+  width:100%;
+  padding:60px 8%;
+  text-align:center;
+}
+
+.class-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.class-card{
+  background:#1e293b;
+  border-radius:15px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.study-btn{
+  margin-top:15px;
+  background:#38bdf8;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:8px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:15px;
+}
+
+.logo{
+font-size:24px;
+margin-bottom:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.login-btn{
+margin-top:15px;
+}
+
+.hero{
+padding:40px 20px;
+min-height:auto;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.2;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+width:90%;
+max-width:320px;
+}
+
+.class-grid{
+grid-template-columns:1fr;
+}
+
+.footer{
+padding:30px 15px;
+text-align:center;
+}
+
+}
