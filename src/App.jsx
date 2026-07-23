@@ -1,9 +1,13 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div className="min-h-screen bg-red-600 flex items-center justify-center">
-      <h1 className="text-6xl font-bold text-white">
-        AI Study Hub
-      </h1>
+    <div className="min-h-screen bg-slate-950 text-white">
+      <Navbar />
+      <Hero />
+      <Footer />
     </div>
   );
 }
